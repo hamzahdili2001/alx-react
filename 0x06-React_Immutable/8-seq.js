@@ -1,6 +1,6 @@
 import { Seq } from 'immutable';
 
-export default function printBestStudents(object) {
+export default function printBestStudents (object) {
   const seq = Seq(object);
 
   //   console.log(seq);
@@ -9,7 +9,7 @@ export default function printBestStudents(object) {
     return student.score > 70;
   });
 
-  function capFirstLetter(string) {
+  function capFirstLetter (string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
